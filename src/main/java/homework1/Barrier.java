@@ -1,4 +1,4 @@
-package homeworks;
+package homework1;
 
 public abstract class Barrier {
     private String name;

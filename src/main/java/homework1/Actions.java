@@ -1,4 +1,4 @@
-package homeworks;
+package homework1;
 
 public interface Actions {
     void run();

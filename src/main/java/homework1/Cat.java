@@ -1,11 +1,11 @@
-package homeworks;
+package homework1;
 
-public class Robot implements Actions {
+public class Cat implements Actions {
     private String name;
     private int trackDistance;
     private int wallHeight;
 
-    public Robot(String name, int trackDistance, int wallHeight) {
+    public Cat(String name, int trackDistance, int wallHeight) {
         this.name = name;
         this.trackDistance = trackDistance;
         this.wallHeight = wallHeight;
@@ -13,12 +13,12 @@ public class Robot implements Actions {
 
     @Override
     public void run() {
-        System.out.printf("Робот %s бежит дистанцию %d\n", this.name, this.getTrackDistance());
+        System.out.printf("Кот по кличке %s бежит дистанцию %d\n", this.name, this.getTrackDistance());
     }
 
     @Override
     public void jump() {
-        System.out.printf("Робот %s прыгает в высоту %d\n", this.name, this.getTrackDistance());
+        System.out.printf("Кот по кличке %s прыгает в высоту %d\n", this.name, this.getWallHeight());
     }
 
     @Override

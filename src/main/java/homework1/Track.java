@@ -1,4 +1,4 @@
-package homeworks;
+package homework1;
 
 public class Track extends Barrier {
     int length;

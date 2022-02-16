@@ -1,24 +1,25 @@
-package homeworks;
+package homework1;
 
-public class Cat implements Actions {
+public class Human implements Actions {
     private String name;
     private int trackDistance;
     private int wallHeight;
 
-    public Cat(String name, int trackDistance, int wallHeight) {
+    public Human(String name, int trackDistance, int wallHeight) {
         this.name = name;
         this.trackDistance = trackDistance;
         this.wallHeight = wallHeight;
     }
 
+
     @Override
     public void run() {
-        System.out.printf("Кот по кличке %s бежит дистанцию %d\n", this.name, this.getTrackDistance());
+        System.out.printf("Человек по имени %s бежит дистанцию %d\n", this.name, this.getTrackDistance());
     }
 
     @Override
     public void jump() {
-        System.out.printf("Кот по кличке %s прыгает в высоту %d\n", this.name, this.getWallHeight());
+        System.out.printf("Человек по имени %s перепрыгивает стену высотой %d\n", this.name, this.getWallHeight());
     }
 
     @Override
